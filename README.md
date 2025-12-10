@@ -71,3 +71,17 @@ export default defineConfig([
   },
 ])
 ```
+
+npm install -D tailwindcss@3.4.17 postcss autoprefixer
+npx tainwindcss init -p
+npm run dev
+
+## shadcn ui
+
+npm install -D @types/node
+npx shadcn@latest init
+
+## Prettier
+
+npm install --save-dev --save-exact prettier
+

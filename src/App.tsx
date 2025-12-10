@@ -1,9 +1,7 @@
 const App = () => {
   return (
-    <div>
-      App
-    </div>
-  )
+    <div className="text-4xl">App</div>
+  );
 };
 
 export default App;
