@@ -85,3 +85,9 @@ npx shadcn@latest init
 
 npm install --save-dev --save-exact prettier
 
+## React Router
+npm i react-router
+
+## shortcut
+rafce
+.enter
