@@ -4,8 +4,8 @@ import { SOCIAL_LINKS } from '@/constants/index';
 
 const Footer = () => {
   return (
-    <footer className=''>
-        <div className='container min-h-16 py-4 bg-background border border-b-1 rounded-t-xl flex flex-col gap-1 items-center lg:flex-row lg:justity-between'>
+    <footer className='p-4 pb-0'>
+        <div className='container min-h-16 py-4 bg-background border border-b-1 rounded-t-xl flex flex-col gap-1 items-center lg:flex-row lg:justify-between'>
             <p className='text-sm text-center'>
                 &copy; 2025 ADHD Ally AI
             </p>
@@ -20,8 +20,8 @@ const Footer = () => {
                         >
                             {label}
                         </a>
-
-                        {index !== SOCIAL_LINKS.length - 1 && (<Separator orientation='vertical'/>)}
+                        {/* Link | Link | Link */}
+                        {index !== SOCIAL_LINKS.length - 1 && (<Separator orientation='vertical' className='h-3 mx-3'/>)}
                     </li>
                 ))}
             </ul>

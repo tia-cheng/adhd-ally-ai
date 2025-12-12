@@ -3,16 +3,16 @@ import { Calendar1, CircleCheck, CalendarDays, Inbox } from 'lucide-react';
 
 export const SOCIAL_LINKS = [
   {
-    href: 'https://youtube.com/@tiacheng',
-    label: 'YouTube',
-  },
-  {
     href: 'https://linkedin.com/in/tia-cheng',
     label: 'LinkedIn',
   },
   {
     href: 'https://github.com/tia-cheng',
     label: 'GitHub',
+  },
+  {
+    href: 'https://youtube.com/@tiacheng',
+    label: 'YouTube',
   },
   {
     href: 'https://instagram.com/tia._.cheng',
