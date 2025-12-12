@@ -80,14 +80,18 @@ npm run dev
 
 npm install -D @types/node
 npx shadcn@latest init
+npx shadcn@latest add button
+npx shadcn@latest add separator
 
 ## Prettier
 
 npm install --save-dev --save-exact prettier
 
 ## React Router
+
 npm i react-router
 
 ## shortcut
+
 rafce
 .enter

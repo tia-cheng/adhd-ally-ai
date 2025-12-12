@@ -2,9 +2,9 @@ import { logo } from "@/assets";
 
 const Logo = () => {
   return (
-    <div>
+    <div className="flex items-center gap-5 font-semibold text-lg">
         <img src={logo} alt="lOGO" className="w-6 h-6" />
-        ADHD Ally
+        ADHD Ally AI
     </div>
   )
 }

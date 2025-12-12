@@ -1,16 +1,23 @@
 /* Navbar */
 
 /* Node Modules */
-// import { Outlet } from 'react-router';
+import { Outlet } from 'react-router';
 
 /* Node Modules */
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const RootLayout = () => {
   return (
     <>
-      <div className="">
+      <div className="min-h-[100dvh] flex flex-col overflow-hidden">
         <Header />
+
+        <main className="grow">
+          <Outlet />
+        </main>
+
+        <Footer />
       </div>
     </>
     
@@ -18,3 +25,7 @@ const RootLayout = () => {
 }
 
 export default RootLayout
+
+//min-h-[100dvh]: You force the <div> to be at least as tall as the screen, no matter how empty it is.
+//dvh: dynamic viewport height, accounts for mobile browser UI changes
+//With overflow-hidden: The browser effectively says, "If anything sticks out of this box, cut it off." It keeps the layout clean.
