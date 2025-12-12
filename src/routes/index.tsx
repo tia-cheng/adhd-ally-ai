@@ -4,12 +4,16 @@ import { createBrowserRouter } from "react-router";
 /* Pages */
 import HomePage from "@/pages/HomePage";
 
+
 /* Layouts */
 //RootLayout is navbar and footer
 import RootLayout from "@/layouts/RootLayout";
 
 /* Types */
 import type { RouteObject } from "react-router";
+
+/* Error Boundaries */
+import RootErrorBoundary from "@/pages/RootErrorBoundary";
 
 const rootRouterChildren: RouteObject[] = [
     {
@@ -23,6 +27,7 @@ const router = createBrowserRouter([
     {
         path: '/', //when the url is simply 'domain.com/'
         element: <RootLayout />, // load the rootLayout comoponent
+        errorElement: <RootErrorBoundary />,
         children: rootRouterChildren // with these children routes
     }
 ])
