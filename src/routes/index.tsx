@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router";
 
 /* Pages */
 import HomePage from "@/pages/HomePage";
-
+import RegisterPage from "@/pages/RegisterPage";
 
 /* Layouts */
 //RootLayout is navbar and footer
@@ -22,7 +22,8 @@ const rootRouterChildren: RouteObject[] = [
     },
     {
         path: 'register',
-    }
+        element: <RegisterPage />,
+    },
 ];
 // declare a constant variable named router and assign it the value of createBrowserRouter function
 // This router object is what the React application later uses to determine which component to render based on the current URL
