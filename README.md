@@ -104,3 +104,5 @@ npm i @types/react-helmet
 
 npm install @clerk/clerk-react
 
+npm install @clerk/themes
+
