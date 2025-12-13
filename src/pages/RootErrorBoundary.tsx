@@ -19,14 +19,14 @@ const RootErrorBoundary = () => {
 
             <div className='grow container flex flex-col justify-center items-center pt-32 pb-12 '>
                 <h1 className='text-3xl font-semibold text-center sm:text-4xl'>
-                    {isRouteErrorResponse(Error)
+                    {isRouteErrorResponse(error)
                         ? 'Ooops...that page does not exist.'
                         : 'Something went wrong'
                     }
                 </h1>
 
                 <p className='text-muted-foreground max-w-[55ch] text-center pt-3 pb-6 sm:text-md'>
-                    {isRouteErrorResponse(Error)
+                    {isRouteErrorResponse(error)
                         ? 'You can get back on track and manage your tasks with ease.'
                         : 'We are working on this issue. Please try again later.'
                     }

@@ -19,6 +19,9 @@ const rootRouterChildren: RouteObject[] = [
     {
         index: true, //if index is true, Navbar+HomePage+Footer. If flase, Navbar + (Empty) + Footer
         element: <HomePage />,
+    },
+    {
+        path: 'register',
     }
 ];
 // declare a constant variable named router and assign it the value of createBrowserRouter function
